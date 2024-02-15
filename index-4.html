@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 4</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">تمرین جاوا اسکریپت - شماره 4</h1>
+    <br><br>
+
+    <div style="text-align: center;">
+        <input id="number1" type="number" placeholder="عدد مورد نظر را وارد کن">
+
+        <h1 id="logic">+ , * , /</h1>
+
+        <input id="number2" type="number" placeholder="عدد مورد نظر را وارد کن">
+
+        <br><br>
+
+        <input type="button" value="جمع" onclick="document.getElementById('logic').innerHTML = ('+');
+            n1 = document.getElementById('number1').value;
+            n2 = document.getElementById('number2').value;
+            alert(parseInt(n1) + parseInt(n2))">
+
+
+        <input type="button" value="تفریق" onclick="document.getElementById('logic').innerHTML = ('-');
+            n1 = document.getElementById('number1').value;
+            n2 = document.getElementById('number2').value;
+            alert(parseInt(n1) - parseInt(n2))">
+
+
+        <input type="button" value="تقسیم" onclick="document.getElementById('logic').innerHTML = ('/');
+            n1 = document.getElementById('number1').value;
+            n2 = document.getElementById('number2').value;
+            alert(parseInt(n1) / parseInt(n2))">
+
+
+        <input type="button" value="ضرب" onclick="document.getElementById('logic').innerHTML = ('*');
+            n1 = document.getElementById('number1').value;
+            n2 = document.getElementById('number2').value;
+            alert(parseInt(n1) * parseInt(n2))">
+
+
+        <input type="button" value="توان" onclick="document.getElementById('logic').innerHTML = ('**');
+            n1 = document.getElementById('number1').value;
+            n2 = document.getElementById('number2').value;
+            alert(parseInt(n1) ** parseInt(n2))">
+    </div>
+</body>
+
+</html>
