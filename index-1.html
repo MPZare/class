@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js 1</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center;">تمرین جاوا اسکریپت - شماره 1</h1>
+
+    <div style="text-align: center;">
+    <input type="button" value="onclick" onclick="alert('oohoom.')">
+    </div>
+  <h1 id="heading"></h1>
+
+  <script>
+    const name = prompt("what is your name?");
+    document.getElementById("heading").innerHTML = name;
+    alert("welcome to my site" + " " + name + "!")
+  </script>
+</body>
+</html>

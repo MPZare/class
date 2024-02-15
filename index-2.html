@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 2</title>
+
+    <style>
+        td,
+        table {
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">تمرین جاوا اسکریپت - شماره 2</h1>
+    <br><br>
+    <div id="btm" style="text-align: center;">
+
+        <h2 id="t-h">عنوان جدول</h2>
+        <input type="button" id="btn" value="عنوان" onclick="document.getElementById('t-h').innerHTML='lorem ipsum';">
+
+        <br><br>
+
+        <input type="button" id="btn" value="نام" onclick="tn=prompt('اسم شما');document.getElementById('tn').innerHTML=tn;">
+
+        <input type="button" id="btn" value="فامیل" onclick="tf=prompt('فامیل شما');document.getElementById('tf').innerHTML=tf;">
+
+        <input type="button" id="btn" value="استان" onclick="ta=prompt('استان شما');document.getElementById('tp').innerHTML=ta;">
+
+        <input type="button" id="btn" value="شهر" onclick="tc=prompt('شهر شما');document.getElementById('tc').innerHTML=tc;">
+
+        <br><br>
+
+        <input type="button" id="btn" value="red"
+            onclick="document.getElementById('tab').style.backgroundColor='#ff1a1a'; ">
+        <input type="button" id="btn" value="blue"
+            onclick="document.getElementById('tab').style.backgroundColor='#3366ff'; ">
+        <input type="button" id="btn" value="withe"
+            onclick="document.getElementById('tab').style.backgroundColor='#ffffff'; ">
+    </div>
+
+    <br>
+
+    <table id="tab" style="margin: auto; width: 60%; height: 20vh;">
+        <tr>
+            <td>
+                نام
+            </td>
+            <td>
+                فامیل
+            </td>
+            <td>
+                استان
+            </td>
+            <td>
+                شهر
+            </td>
+        </tr>
+        <tr>
+            <td id="tn">
+                <br>
+            </td>
+            <td id="tf">
+                <br>
+            </td>
+            <td id="tp">
+                <br>
+            </td>
+            <td id="tc">
+                <br>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
