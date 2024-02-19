@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>js 2</title>
 
     <style>
@@ -13,72 +15,96 @@
             border-collapse: collapse;
         }
 
+        table {
+            background-color: white;
+        }
+
         td {
             text-align: center;
+            color: black;
+        }
+
+        body {
+            background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 
 <body>
-    <h1 style="text-align: center;">تمرین جاوا اسکریپت - شماره 2</h1>
-    <br><br>
-    <div id="btm" style="text-align: center;">
-
-        <h2 id="t-h">عنوان جدول</h2>
-        <input type="button" id="btn" value="عنوان" onclick="document.getElementById('t-h').innerHTML='lorem ipsum';">
-
+    <div class="mt-4 text-white rounded " style="width: 50%; margin: auto; padding-top: 1%; background-color: #4366b2;">
+        <h1 style="text-align: center;">تمرین جاوا اسکریپت - شماره 2</h1>
         <br><br>
+        <div id="btm" style="text-align: center;">
 
-        <input type="button" id="btn" value="نام" onclick="tn=prompt('اسم شما');document.getElementById('tn').innerHTML=tn;">
+            <h2 id="t-h">عنوان جدول</h2>
+            <br>
+            <input type="button" id="btn" value="عنوان" class="btn btn-dark"
+                onclick="document.getElementById('t-h').innerHTML='lorem ipsum';">
 
-        <input type="button" id="btn" value="فامیل" onclick="tf=prompt('فامیل شما');document.getElementById('tf').innerHTML=tf;">
+            <br><br>
 
-        <input type="button" id="btn" value="استان" onclick="ta=prompt('استان شما');document.getElementById('tp').innerHTML=ta;">
+            <input type="button" id="btn" value="نام" class="btn btn-dark"
+                onclick="tn=prompt('اسم شما');document.getElementById('tn').innerHTML=tn;">
 
-        <input type="button" id="btn" value="شهر" onclick="tc=prompt('شهر شما');document.getElementById('tc').innerHTML=tc;">
+            <input type="button" id="btn" value="فامیل" class="btn btn-dark"
+                onclick="tf=prompt('فامیل شما');document.getElementById('tf').innerHTML=tf;">
 
-        <br><br>
+            <input type="button" id="btn" value="استان" class="btn btn-dark"
+                onclick="ta=prompt('استان شما');document.getElementById('tp').innerHTML=ta;">
 
-        <input type="button" id="btn" value="red"
-            onclick="document.getElementById('tab').style.backgroundColor='#ff1a1a'; ">
-        <input type="button" id="btn" value="blue"
-            onclick="document.getElementById('tab').style.backgroundColor='#3366ff'; ">
-        <input type="button" id="btn" value="withe"
-            onclick="document.getElementById('tab').style.backgroundColor='#ffffff'; ">
+            <input type="button" id="btn" value="شهر" class="btn btn-dark"
+                onclick="tc=prompt('شهر شما');document.getElementById('tc').innerHTML=tc;">
+
+            <br><br>
+            <input type="button" id="btn" value="normal" class="btn btn-light"
+                onclick="document.getElementById('tab').style.backgroundColor='#4366b2'; ">
+
+            <input type="button" id="btn" value="red" class="btn btn-danger"
+                onclick="document.getElementById('tab').style.backgroundColor='#ff1a1a'; ">
+
+            <input type="button" id="btn" value="blue" class="btn btn-primary"
+                onclick="document.getElementById('tab').style.backgroundColor='#3366ff'; ">
+
+            <input type="button" id="btn" value="white" class="btn btn-light"
+                onclick="document.getElementById('tab').style.backgroundColor='#ffffff'; ">
+        </div>
+
+        <br>
+        <div style="padding-bottom: 1%;">
+            <table id="tab" style="margin: auto; width: 60%; height: 20vh;">
+                <tr>
+                    <td>
+                        نام
+                    </td>
+                    <td>
+                        فامیل
+                    </td>
+                    <td>
+                        استان
+                    </td>
+                    <td>
+                        شهر
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tn">
+                        <br>
+                    </td>
+                    <td id="tf">
+                        <br>
+                    </td>
+                    <td id="tp">
+                        <br>
+                    </td>
+                    <td id="tc">
+                        <br>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-
-    <br>
-
-    <table id="tab" style="margin: auto; width: 60%; height: 20vh;">
-        <tr>
-            <td>
-                نام
-            </td>
-            <td>
-                فامیل
-            </td>
-            <td>
-                استان
-            </td>
-            <td>
-                شهر
-            </td>
-        </tr>
-        <tr>
-            <td id="tn">
-                <br>
-            </td>
-            <td id="tf">
-                <br>
-            </td>
-            <td id="tp">
-                <br>
-            </td>
-            <td id="tc">
-                <br>
-            </td>
-        </tr>
-    </table>
 </body>
 
 </html>
