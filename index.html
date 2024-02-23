@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,7 +12,12 @@
     </script>
     <title>this is my site</title>
     <style>
-        td {
+        #myname {
+            text-shadow: 2px 2px black;
+        }
+
+        td,
+        .card-title {
             text-align: center;
         }
 
@@ -22,30 +26,38 @@
         }
 
         body {
+            direction: rtl;
             background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        .card {
+            margin-bottom: 8%;
+        }
     </style>
 </head>
 
-<body dir="rtl">
-    <div class="mt-4 text-white rounded " style="width: 80%; margin: auto; padding-top: 1%; background-color: #4366b2;">
-        <div class="sm-">
-            <h1 style="text-align: center;">تمرین های من
+<body>
+    <div class="mt-4 text-white rounded "
+        style="width: 80%; margin: auto; padding-top: 1%; background-color: #4366b2; margin-bottom: 1%;">
+        <div class="">
+            <h1 id="myname" style="text-align: center;">تمرین های من
                 <br>
-                { محمد پارسا زارع }</h1>
+                { محمد پارسا زارع }
+            </h1>
         </div>
-
         <br><br>
 
         <div class="container">
             <div class="row">
-                <div class="col-4">
+
+                <!-- --------db-------- -->
+                <div class="col-md-4">
                     <div class="card">
-                        <div class="card-header bg-info">
-                            <p style="font-family: b titr;" class="card-title text-center "><a class="card-link"
-                                    data-toggle="collapse" href="#db"> Data Base</a></p>
+                        <div class="card-header bg-secondary">
+                            <p class="card-title text-center "><a class="card-link" data-toggle="collapse" href="#db">
+                                    Data Base</a></p>
                         </div>
                         <div class="card-body">
                             <div id="db" class="table-responsive collapse show">
@@ -71,28 +83,27 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-4">
+                <!-- ---------html------- -->
+                <div class="col-md-4">
                     <div class="card">
-                        <div class="card-header bg-info">
-                            <p style="font-family: b titr;" class="card-title text-center "><a class="card-link"
-                                    data-toggle="collapse" href="#cb"> html</a></p>
+                        <div class="card-header" style="background-color: rgb(248, 84, 24);">
+                            <p class="card-title text-center "><a class="card-link" data-toggle="collapse"
+                                    href="#html">HTML</a></p>
                         </div>
                         <div class="card-body">
-                            <div id="cb" class="table-responsive collapse show">
+                            <div id="html" class="table-responsive collapse show">
                                 <table class="table table-bordered table-info">
                                     <thead>
                                         <tr>
-                                            <td class="col-1"> شماره</td>
-                                            <td class="col-1">تاریخ</td>
+                                            <td class="col"> شماره</td>
+                                            <td class="col">تاریخ</td>
                                             <td class="col">عنوان</td>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="col-1"> <span class="text-sm-center">1 </span></td>
-                                            <td class="col-1"><span class="text-sm-center"> 1402/11/09 </span></td>
+                                            <td class="col"> <span class="text-sm-center">1 </span></td>
+                                            <td class="col"><span class="text-sm-center"> 1402/11/09 </span></td>
                                             <td class="col"><span class="text-sm-center"> <a
                                                         href="html.pdf">file</a></span>
                                             </td>
@@ -103,12 +114,12 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-4">
+                <!-- ---------css------- -->
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header bg-info">
-                            <p style="font-family: b titr;" class="card-title text-center "><a class="card-link"
-                                    data-toggle="collapse" href="#css"> css</a></p>
+                            <p class="card-title text-center "><a class="card-link" data-toggle="collapse"
+                                    href="#css">CSS</a></p>
                         </div>
                         <div class="card-body">
                             <div id="css" class="table-responsive collapse show">
@@ -134,12 +145,12 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-4">
+                <!-- --------bs-------- -->
+                <div class="col-md-4">
                     <div class="card">
-                        <div class="card-header bg-info">
-                            <p class="card-title text-center "><a class="card-link" data-toggle="collapse" href="#bs">
-                                    bs</a></p>
+                        <div class="card-header" style="background-color: rgb(105, 89, 250)" ;>
+                            <p class="card-title text-center "><a class="card-link" data-toggle="collapse"
+                                    href="#bs">BootStrap</a></p>
                         </div>
                         <div class="card-body">
                             <div id="bs" class="table-responsive collapse show">
@@ -165,13 +176,12 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-4">
+                <!-- ---------js------- -->
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header bg-warning">
                             <p class="card-title text-center "><a class="card-link" data-toggle="collapse"
-                                    href="#js">js</a>
-                            </p>
+                                    href="#js">JavaScript</a></p>
                         </div>
                         <div class="card-body">
                             <div id="js" class="table-responsive collapse show">
@@ -231,15 +241,69 @@
                                                     </a></span></td>
                                         </tr>
 
+                                        <tr>
+                                            <td class="col text-sm-center"> <span class="">6</span></td>
+                                            <td class="col text-sm-center"><span class=""> 1402/11/30 </span></td>
+                                            <td class="col text-sm-center"><span class=""><a href="index-6.html">
+                                                        تشخیص طول متن , حذف فاصله های اول و آخر و تشخیص حرف در موقعیت
+                                                        سفارشی
+
+                                                    </a></span></td>
+                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- ---------php------- -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header" style="background-color: rgb(165, 82, 233);">
+                            <p class="card-title text-center "><a class="card-link" data-toggle="collapse"
+                                    href="#php">PHP</a></p>
+                        </div>
+                        <div class="card-body">
+                            <div id="php" class="table-responsive collapse show">
+                                <table class="table table-bordered table-info">
+                                    <thead>
+                                        <tr>
+                                            <td class="col"> شماره</td>
+                                            <td class="col">تاریخ</td>
+                                            <td class="col">عنوان</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col"> <span class="text-sm-center">1 </span></td>
+                                            <td class="col"><span class="text-sm-center"> 1402/11/09 </span></td>
+                                            <td class="col"><span class="text-sm-center"> <a
+                                                        href="php.pdf">file</a></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
+
         </div>
-    </div>
 </body>
 
 </html>
