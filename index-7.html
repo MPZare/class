@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>js 7</title>
+
+    <style>
+        body {
+            background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mt-4 text-white rounded "
+        style="width: 50%; margin: auto; padding-top: 1%; background-color: #4366b2; text-align: center;">
+        <h1>تمرین جاوا اسکریپت - شماره 7
+        </h1>
+        <br>
+        <h5>سن برنامه نویس شدن</h5>
+        <br>
+        <p id="natije"></p>
+
+        <input type="text" id="n" class="text-center" placeholder="نام خود را وارد کنید">
+        <br><br>
+
+        <input type="number" id="a" class="text-center" placeholder="سن خود را وارد کنید">
+        <br><br>
+
+        <div style="padding-bottom: 1%">
+            <button type="button" class="btn btn-warning" onclick="
+                            name=document.getElementById('n').value;
+                            age=parseInt(document.getElementById('a').value)
+
+
+                            if(age>1 && age<=7) {
+                                document.getElementById('natije').innerHTML=name + ' ' + 'فعلا سعی کن با اسباب بازی های اتاق خونه بسازی'
+                            }
+                            
+                            else if(age>7 && age<13) {
+                                document.getElementById('natije').innerHTML=name + ' ' + 'یکم زوده ولی خب'
+                            }
+
+                            else if(13<=age && age<=23) {
+                                document.getElementById('natije').innerHTML=name+ ' ' + 'خوبه! زمان خوبی رو انتخاب کردی'
+                            }
+
+                            else if(23<age && age<=50) {
+                                document.getElementById('natije').innerHTML=name+ ' ' + 'سریع باش که داره دیر میشه'
+                            }
+                            
+                            else if(age>50 && age<90) {
+                                document.getElementById('natije').innerHTML=name + ' '+ 'یکم دیره ولی ماهی رو هروقت از آب بگیری تازه هست'
+                            }
+
+                            else {
+                                document.getElementById('natije').innerHTML=name + ' ' + 'رو آب بخندی'
+                            }
+                ">OK</button>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
